@@ -9,6 +9,11 @@ class Student extends CI_Controller {
 	function fn_form(){
 		$this->load->view('form');
 	}
+	
 }
+
+
+
+
 
 
