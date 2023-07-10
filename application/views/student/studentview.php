@@ -67,13 +67,21 @@
                   </tr>
                 </thead>
                 <tbody>
+                <?php
+                    $i=1;
+                    foreach($data as $row){
+                ?>
                   <tr>
-                    <td>1</td>
-                    <td>Sok San</td>
-                    <td>Male</td>
-                    <td><a href="">Update</a></td>
-                    <td><a href="">Delete</a></td>
+                      <td><?= $i ?></td>
+                      <td><?= $row->name ?></td>
+                      <td><?= $row->gender ?></td>
+                      <td><a href='<?= base_url()?>student/student/updatedata?id=<?=$row->id?>'>Update</a></td>
+                      <td><a href='<?= base_url()?>student/student/deletedata?id=<?=$row->id?>'>Remove</a></td>
                   </tr>
+                <?php 
+                      $i++;
+                    }
+                ?>
                 </tbody>
 
               </table>

@@ -6,8 +6,8 @@
 	    <div class="dropdown list-group-item list-group-item-action list-group-item-light">
 			Students
 		  	<div class="dropdown-content">
-			<a href="Student_Controller/listStudent">List Student</a>
-			<a href="Student_Controller/addStudent">Add Student</a>
+			<a href="StudentController/listStudent">List Student</a>
+			<a href="<?= base_url()?>StudentController/student/add">Add Student</a>
 		  </div>
 		</div>
 		<div class="dropdown list-group-item list-group-item-action list-group-item-light">
