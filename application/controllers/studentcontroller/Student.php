@@ -25,7 +25,16 @@ class Student extends CI_Controller{
     public function add()
     {
         $this->load->view("student/add");
-
+        if($this->input->post('save'))
+        {
+            $name = $this->input->post('name');
+            $gender = $this->input->post('gender');
+            $data = array(
+                'name'      =>  $name,
+                'gender'    =>  $gender
+            );
+            $this->Student_Model->save_record($data);
+        }
     }
 }
 
