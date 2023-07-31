@@ -75,8 +75,8 @@
                       <td><?= $i ?></td>
                       <td><?= $row->name ?></td>
                       <td><?= $row->gender ?></td>
-                      <td><a href='<?= base_url()?>student/student/updatedata?id=<?=$row->id?>'>Update</a></td>
-                      <td><a href='<?= base_url()?>student/student/deletedata?id=<?=$row->id?>'>Remove</a></td>
+                      <td><a href='<?= base_url()?>studentcontroller/student/updatedata?id=<?=$row->id?>'>Update</a></td>
+                      <td><a href='<?= base_url()?>studentcontroller/student/deletedata?id=<?=$row->id?>'>Remove</a></td>
                   </tr>
                 <?php 
                       $i++;

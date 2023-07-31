@@ -36,6 +36,21 @@ class Student extends CI_Controller{
             $this->Student_Model->save_record($data);
         }
     }
+
+    public function updatedata()
+    {
+        $id=$this->input->get('id');
+        $d=array(
+            'id'    =>  $id
+        );
+        $data['data']=$this->Student_Model->display_records_By_Id($d);
+        $this->load->view('student/update_record',$data);
+
+
+    }
+
+
+
 }
 
 
